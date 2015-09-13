@@ -6,7 +6,7 @@ class CreatePostablrEntryQuotes < ActiveRecord::Migration
       t.text :body
       t.text :source
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end

@@ -6,7 +6,7 @@ class CreatePostablrEntryLinks < ActiveRecord::Migration
       t.string :title
       t.string :url
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end

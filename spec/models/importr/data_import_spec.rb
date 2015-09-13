@@ -2,10 +2,10 @@ require 'spec_helper'
 
 module Importr
   describe DataImport do
-    
+
     let(:importer_type){ "SomeImporter".constantize }
-    
-    let(:data_import){ 
+
+    let(:data_import){
       DataImport.new(importer_type: importer_type)
     }
 
@@ -18,7 +18,7 @@ module Importr
     end
 
     it "importer type shuld be SomeImporter class ?" do
-      expect(data_import.importer_type).to eql SomeImporter
+      expect(data_import.importer_type).to eql "SomeImporter"
     end
 
     describe "build data import with file" do
@@ -58,7 +58,7 @@ module Importr
         expect( lambda{ model.save } ).to change{GeneralModel.count}
       end
 
-      it "should have one error" do 
+      it "should have one error" do
         model.save
         model.reload
         expect( model ).to have(1).error_messages

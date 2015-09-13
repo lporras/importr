@@ -15,7 +15,7 @@ class CreatePostablrEntries < ActiveRecord::Migration
       t.datetime :unpublish_at
       t.string :state
       t.string :password
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end

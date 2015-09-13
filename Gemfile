@@ -13,7 +13,7 @@ gemspec
 # To use debugger
 # gem 'debugger'
 
-gem 'debugger'
+gem 'byebug'
 gem 'sidekiq' #, "~> 2.11.2"
 
 gem 'coveralls', require: false

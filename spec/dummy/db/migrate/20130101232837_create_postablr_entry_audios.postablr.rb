@@ -8,7 +8,7 @@ class CreatePostablrEntryAudios < ActiveRecord::Migration
       t.string :file_content_type
       t.text :body
       t.string :title
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end

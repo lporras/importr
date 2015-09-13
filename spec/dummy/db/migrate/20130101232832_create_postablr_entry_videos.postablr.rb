@@ -12,7 +12,7 @@ class CreatePostablrEntryVideos < ActiveRecord::Migration
       t.string :service
       t.integer :duration
       t.text :caption
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end

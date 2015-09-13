@@ -8,7 +8,7 @@ class CreatePostablrEntryImages < ActiveRecord::Migration
       t.string :photo_content_type
       t.string :photo_size
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end

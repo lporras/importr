@@ -10,14 +10,14 @@ ActiveRecord::Schema.define do
     t.string :name
     t.string :last_name
     t.string :email
-    t.timestamps
+    t.timestamps null: false
   end
   create_table :general_models do |t|
     t.references :user, index: true
     t.string :name
     t.text :settings
     t.integer :position
-    t.timestamps
+    t.timestamps null: false
   end
 
   create_table :importr_data_imports do |t|
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define do
     t.integer :processed_rows
     t.integer :total_rows
     t.string :uuid
-    t.timestamps
+    t.timestamps null: false
   end
 
 end

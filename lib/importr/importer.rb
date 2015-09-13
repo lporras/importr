@@ -47,7 +47,7 @@ module Importr
         total_rows: row_count,
       }
       if data_import
-        data_import.update_attributes(@counters) 
+        data_import.update_attributes(@counters)
         add_error(err) unless err.blank?
       end
     end

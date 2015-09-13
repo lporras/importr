@@ -13,7 +13,7 @@ class CreateImportrDataImports < ActiveRecord::Migration
       t.integer :total_rows
       t.string :uuid
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end

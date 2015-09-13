@@ -14,7 +14,7 @@ class CreateRedactorAssets < ActiveRecord::Migration
       t.integer :width
       t.integer :height
 
-      t.timestamps
+      t.timestamps null: false
     end
 
     add_index "redactor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_redactor_assetable_type"
